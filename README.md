@@ -23,7 +23,7 @@ python  main_for_UDA.py --root_dir [datasets_root_path]  --dataset [DATASET_NAME
 ```
 For example, 
  ```
-python  main_for_UDA.py --root_dir ./data --dataset officehome --source Product    --target Art   --phase train --gpu 0  --steps 70000 --lambda_div 0.1
+python  main_for_UDA.py --root_dir ./data --dataset officehome --source Product    --target Clipart   --phase train --gpu 0  --steps 70000 --lambda_div 0.1
  ```
 
 5. Run the command "python main_for_UDA.py -h " for help. If encountering an error like "CUDA out of memory", please adjust the value of "batch_size" in the main code file or consider distributed training.
