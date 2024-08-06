@@ -14,7 +14,7 @@ pytorch = 1.11
    ```
    For example, 
    ```
-   python  main_for_UDA.py --root_dir ./data --dataset officehome --source Product --target Art  --phase pretrain --gpu 0 --lambda_div 0.1 --epochs 20
+   python  main_for_UDA.py --root_dir ./data --dataset officehome --source Product  --phase pretrain --gpu 0 --lambda_div 0.1 --epochs 20
    ```
   
 4. Main traning step: Run the command at the root of this project dirtory
