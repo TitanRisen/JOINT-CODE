@@ -26,7 +26,7 @@ For example,
 python  main_for_UDA.py --root_dir ./data --dataset officehome --source Product    --target Art   --phase train --gpu 0  --steps 70000 --lambda_div 0.1
  ```
 
-5. You can run the command "python main_for_UDA.py -h " for help.
+5. Run the command "python main_for_UDA.py -h " for help. If encountering an error like "CUDA out of memory", please adjust the value of "batch_size" in the main code file or consider distributed training.
 
 ## References
 [1] Hemanth, V., Jose, E., Shayok, C., Sethuraman, P.: Deep hashing network for unsupervised domain adaptation. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 5018–5027 (2017).

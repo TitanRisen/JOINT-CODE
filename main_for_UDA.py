@@ -128,11 +128,11 @@ if args.batch_size is None:
     batch_size = 48
 else:
     batch_size = {
-        'alexnet': 96, 
+        'alexnet': 128, 
         'vgg16': 48,
-        'resnet34': 72,
-        'resnet': 72,
-        "resnet18": 72
+        'resnet34': 96,
+        'resnet': 96, #72,
+        "resnet18": 96
     }[args.net]
 args.pre_type = 1
 select_class_num = batch_size // 2 
