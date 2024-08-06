@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: ByteHong
+@author: 
 
 """
 import torch
