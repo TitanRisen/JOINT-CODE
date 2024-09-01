@@ -188,6 +188,7 @@ if __name__ == '__main__':
         else:
             a = args.start_update_step % args.update_interval
             first_batch_num = args.start_update_step if a == 0  else (args.start_update_step // args.update_interval + 1) * args.update_interval
+        if args.source.lower() in ['clipart']: args.pre_type = 2
         label_sampler = LabelSampler(first_batch_num, class_num, select_class_num)
         dataloaders['src_train_l'], dataloaders['tar_train_ul'] = load_data_for_UDA(
             args.root_dir, args.dataset, args.source, args.target, args.phase, batch_size, args.net, label_sampler, pre_type=args.pre_type, args=args)
